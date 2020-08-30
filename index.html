@@ -76,13 +76,13 @@
 <script type="text/javascript">  
     $('document').ready(function() {
         'use strict';
-       
+        document.getElementById("kksk").onclick=function(){
     	$('.countdown').final_countdown({
             'start': 0,
-            'end':1000,
+            'end':document.getElementById("kksk").value*60,
             'now': 0        
         });
-    });
+    }});
 
 </script>
 </body>
