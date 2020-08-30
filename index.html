@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <input type="text" id="kksk" value="60">
+    <input type="text" id="kksk">
 <div class="countdown countdown-container container">
     <div class="clock row">
         <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
@@ -76,13 +76,13 @@
 <script type="text/javascript">  
     $('document').ready(function() {
         'use strict';
-        document.getElementById("kksk").onclick=function(){
+       
     	$('.countdown').final_countdown({
             'start': 0,
-            'end':document.getElementById("kksk").value*60,
+            'end':1000,
             'now': 0        
         });
-    }});
+    });
 
 </script>
 </body>
